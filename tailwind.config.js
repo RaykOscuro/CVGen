@@ -7,12 +7,16 @@ export default {
     },
     fontSize: {
       sm: "0.75rem",
-      base: ".75rem",
+      base: ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.1em" }],
+      subbase: ["0.75rem", { fontWeight: "400", letterSpacing: "0em" }],
       xl: "1rem",
       "2xl": "1.25rem",
       "3xl": "1.5rem",
       "4xl": "2rem",
-      "5xl": "2.5rem",
+      "5xl": [
+        "4rem",
+        { lineHeight: "3.5rem", letterSpacing: "0.1em", fontWeight: "700" },
+      ],
     },
     extend: {
       colors: {
@@ -20,6 +24,9 @@ export default {
         maintext: "#3f4551",
         subtext: "#abbcdd",
         lefttext: "#5f6f90",
+      },
+      gridTemplateColumns: {
+        cv: "25fr, 75fr",
       },
     },
   },
